@@ -1,8 +1,7 @@
 /*jslint */
-/*global window,console,GlocalSearch */
+/*global window, console, GlocalSearch */
 
 (function() {
-// start namespace
 
 	function addEvent(obj,type,fn){
 	  if (obj.attachEvent) {
@@ -67,8 +66,7 @@
 	
 	function processCSV(csv) {
 	  var stores = CSVToArray(csv);
-	  var len = stores.length;
-	  for (var i=0; i<len; i++) {
+	  for (var i=stores.length; i--;) {
 			var store = stores[i];	
 			var postcode = store[5];
 			if (postcode !== undefined) {
@@ -88,9 +86,7 @@
 		var formSingle = doc.getElementById('form-single');
 		if (formSingle) {
 			var mapPostcode = doc.getElementById('postcode');
-		  addEvent(formSingle,'click',function(e){
-				var bCancel;
-				bCancel = (e.preventDefault) ? e.preventDefault() : event.returnValue = false;
+		  addEvent(formSingle,'click',function(){
 				var postcode = mapPostcode.value.toUpperCase();
 				if (postcode === '') {
 					window.alert('Please enter a postocde');
@@ -103,9 +99,7 @@
 		var formMultiple = doc.getElementById('form-multiple');
 		if (formMultiple) {
 			var csvData = doc.getElementById('csv');
-		  addEvent(formMultiple,'click',function(e){
-				var bCancel;
-				bCancel = (e.preventDefault) ? e.preventDefault() : event.returnValue = false;
+		  addEvent(formMultiple,'click',function(){
 				var csv = csvData.value;
 				if (csv === '') {
 					window.alert('Please enter csv data');

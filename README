@@ -1,0 +1,18 @@
+
+/* =Geocode UK Postcodes
+--------------------------------------------- */
+
+Web UI for (batch) geocoding of UK postcodes with the (accurate!) Google Local Search API.
+
+Inputs can be a single postcode, or a list of addresses in CSV format.
+
+Outputs the input address, plus latitude and longtitude coordinates, in an HTML table.
+
+Please clone and use responsibly!
+
+/* =References
+--------------------------------------------- */
+
+http://code.google.com/apis/ajaxsearch/
+http://www.tomanthony.co.uk/blog/geocoding-uk-postcodes-with-google-map-api/
+http://escapologist.wordpress.com/2009/01/30/geocode-accuracy-with-uk-postcodes-and-google-apis/

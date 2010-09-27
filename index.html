@@ -6,25 +6,21 @@
 		<link rel="stylesheet" href="geocode.css" />
   </head>
   <body>
-
 		<div id="container">
-
 			<h1>Geocode UK Postcodes</h1>
-			
 			<div id="forms">		
 				<p>
 					<label for="postcode">Postcode</label><br />
 					<input id="postcode" type="text" class="text" />
-					<input id="form-single"  type="button" class="button" value="Go" /></span>
+					<input id="form-single"  type="button" class="button" value="Go" />
 				</p>
 				<p>OR</p>
 				<p>
 					<label for="csv"><abbr title="Comma Seperated Values">CSV</abbr> <span>address1,address2,address3,address4,address5,postcode</span></label><br />
 					<textarea id="csv" rows="4" cols="60"></textarea>
-					<input id="form-multiple" type="button" class="button" value="Go" /></span>
+					<input id="form-multiple" type="button" class="button" value="Go" />
 				</p>
 			</div>
-			
 			<table>
 				<thead>
 					<tr>
@@ -40,10 +36,8 @@
 				</thead>
 				<tbody id="result"></tbody>
 			</table>
-			
 		</div>
-  	
-  	<script type="text/javascript" src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=ABQIAAAAkzl6IDUenlGaQdJYQOtrehThE15Y4o_dc93e161I8SpNd5Xi8RQGL2OoWTOW1ZjUyn6RXgBljmDCXA"></script>
-  	<script type="text/javascript" src="geocode.js"></script>
+  	<script src="http://www.google.com/uds/api?file=uds.js&amp;v=1.0&amp;key=ABQIAAAAkzl6IDUenlGaQdJYQOtrehThE15Y4o_dc93e161I8SpNd5Xi8RQGL2OoWTOW1ZjUyn6RXgBljmDCXA"></script>
+  	<script src="geocode.js"></script>
   </body>
 </html>
