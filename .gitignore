@@ -1,0 +1,5 @@
+# .gitignore for monospaced
+.DS_Store # Mac DS_Store
+Thumbs.db # Win Thmbs
+.svn # svn files
+.epp # EditPad project files
